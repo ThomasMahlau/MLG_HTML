@@ -1,0 +1,147 @@
+body {
+	font-family: Helvetica;
+	background-color: dodgerblue;
+	margin: 0;
+}
+
+nav {
+	background-color: white;
+}
+
+.navi {
+	list-style-type: none;
+	float: right;
+
+}
+
+.navpunkte {
+	float: left;
+	/*margin-right: 20px;*/
+	padding: 4px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: tomato;
+	font-size: 20px;
+	padding: 20px 10px 20px 10px;
+}
+
+a:hover {
+	background-color: tomato;
+	color: white;
+	padding: 20px 10px 20px 10px;
+}
+
+header {
+	background-color: indianred;
+	height: 500px;
+
+	background-image: url("../src/images/fussball.png");
+	background-repeat: no-repeat; /* schalte wiederholte Darstellung aus */
+	background-position: bottom center;
+	background-size: cover;
+}
+
+main {
+	margin-top: 2em;
+}
+
+section {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.erklaertext {
+	width: 60%;
+	margin: auto;
+	background-color: lightgrey;
+	padding: 1em;
+	line-height: 1.4em;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: center;
+	/*background-color: red;*/
+}
+
+.block1, .block {
+	background-color: darkblue;
+	color: white;
+	text-align: justify;
+	padding: 1em;
+	border: 5px solid white;
+	width: 20%;
+	margin-right: 15px;
+	margin-left: 15px;
+	line-height: 1.4em;
+}
+
+.block1 {
+	height: 30em;
+}
+
+.block {
+	height: 25em;
+	margin-top: 5em;
+}
+
+h3 {
+	font-size: 32px;
+	text-align: center;
+	margin-top: 0.4em;
+	margin-bottom: 0;
+}
+
+.button_justify {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.button {
+	background-color: tomato;
+	color: white;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+	/*padding-left: 0.5em;
+	padding-right: 0.5em;*/
+	border: 1px solid white;
+	border-radius: 8px;
+}
+
+.button:hover {
+	background-color: green;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+#bild1, #bild2 {
+	width: 25em;
+	height: 25em;
+	background: white;
+	margin-left: 2em;
+	margin-right: 2em;
+
+	background-size: cover;
+	background-repeat: no-repeat; /* schalte wiederholte Darstellung aus */
+}
+
+#bild1{
+	background-image: url("../src/images/adventures/boot.jpg");
+	background-position: center center;
+}
+
+#bild2{
+	background-image: url("../src/images/adventures/surfer.jpg");
+	background-position: center center;
+}
+
+footer {
+	background-color: white;
+	text-align: center;
+	color: white;
+	padding: 1em;
+}
