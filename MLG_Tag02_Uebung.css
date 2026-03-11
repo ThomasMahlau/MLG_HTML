@@ -1,0 +1,68 @@
+.flexbox {
+	display: flex;
+	justify-content: center;
+	/*background-color: red;*/
+	margin-top: 3em;
+}
+
+#bild1, #bild2, #bild3 {
+	width: 25em;
+	height: 25em;
+	background: white;
+	margin-left: 2em;
+	margin-right: 2em;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#bild1 {
+	background-image: url("../src/images/adventures/boot.jpg");
+	background-position: center center;
+}
+
+#bild2 {
+	background-image: url("../src/images/adventures/boot.jpg");
+	background-position: center center;
+}
+
+#bild3 {
+	background-image: url("../src/images/adventures/boot.jpg");
+	background-position: center center;
+}
+
+.text, .text2, .text3 {
+	line-height: 1.4em;
+	padding: 2em;
+}
+
+.text {
+	width: 50%;
+	margin: auto;
+	margin-top: 3em;
+	background-color: tomato;
+	color: white;
+}
+
+.text2 {
+	width: 40%;
+	margin-left:1em;
+	margin-right: 1em;
+	background-color: lightgrey;
+}
+
+.text3 {
+	background-color: tomato;
+	color: white;
+	width: 87%;
+	margin: auto;
+	margin-top: 3em;
+}
+
+
+
+
+
+
+
+/* iiyama mit touch & browser mit androids - chromium? */
