@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* 3 ungleiche Spalten nebeneinander */
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px;
+  /*border-right: 10px solid white;*/
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Template mit Float</h2>
+
+<div class="header">
+  <h2>Header</h2>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">Hier kommt ein Submenu rein</div>
+  <div class="column middle" style="background-color:#bbb;">Column</div>
+  <div class="column side" style="background-color:#ccc;">Hier kommt Werbung rein</div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>

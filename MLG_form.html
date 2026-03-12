@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Formulare</title>
+
+		<style>
+			.gridcontainer {
+				display: grid;
+				grid-template-columns: auto auto auto;
+				justify-content: center;
+				grid-gap: 30px;
+				background-color: darkblue;
+				padding: 2em;
+			}
+
+			.gridcontainer div {
+				background-color: dodgerblue;
+				padding: 2em;
+				color: white;
+			}
+
+			input, textarea {
+				border-radius: 3px;
+				border: 3px solid red;
+				outline: none;
+			}
+
+			input[type=text]:focus {
+				border-color: red;
+			}
+
+			input[type=submit] {
+				background-color: red;
+				color: white;
+				border-radius: 5px;
+				padding: 0.3em;
+				padding-left: 0.5em;
+				padding-right: 0.5em;
+			}
+
+			input[type=radio] {
+				accent-color: red;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Formularfelder</h1>
+
+		<h3>Methoden des Form-Tags</h3>
+		<ul>
+			<li>POST</li>
+			<li>GET</li>
+		</ul>
+
+		<h3>Formulartypen</h3>
+		<ul>
+			<li>Textfeld - type="text"</li>
+			<li>Email - type="email"</li>
+			<li>Textarea - textarea</li>
+		</ul>
+
+		<hr>
+		<div class="gridcontainer">
+			<div>
+				<h3>Textfelder</h3>
+				<form action="auswerten.php" method="POST">
+
+					<label for="fname">Namen eingeben:</label><br>
+					<input type="text" name="fname" id="fname" placeholder="Bitte Namen eingeben" autofocus><br><br>
+
+					<label for="femail">Email:</label><br>
+					<input type="email" name="femail" id="femail" placeholder="Ihre Email-Adresse"><br><br>
+
+					<label for="fpwd">Password:</label><br>
+					<input type="password" name="fpwd" id="fpwd" placeholder="Ihr Passwort"><br><br>
+
+					<label for="fmessage">Message:</label><br>
+					<textarea name="fmessage" id="fmessage" placeholder="Ihre Nachricht"></textarea><br><br>
+
+					<input type="submit" name="button" value="Message absenden">
+
+				
+			</div>
+			<div>
+				<h3>Radio-Buttons</h3>
+				<strong>Welchen Autotypen bevorzugen Sie?</strong><br><br>
+				Müssen alle den gleichen Namen haben!<br>
+				Value MUSS eindeutig pro Radiobutton sein!<br><br>
+				<input type="radio" name="fauto" value="VW"> VW<br>
+				<input type="radio" name="fauto" value="BMW"> BMW<br>
+				<input type="radio" name="fauto" value="MB"> Mercedes<br>
+			</div>
+			<div>
+				<h3>Checkbox-Felder</h3>
+				<strong>In welchen Ländern haben Sie schon Urlaub gemacht?</strong><br><br>
+				<input type="checkbox" name="furlaub1" value="Indien"> Indien<br>
+				<input type="checkbox" name="furlaub2" value="USA"> USA<br>
+				<input type="checkbox" name="furlaub3" value="Indonesien"> Indonesien<br>
+				<input type="checkbox" name="furlaub4" value="andere"> andere<br>
+			</div>
+
+			</form>
+
+	</body>
+</html>
+

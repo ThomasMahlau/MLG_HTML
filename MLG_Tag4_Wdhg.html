@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+
+	/* Typ-Selektoren */>
+
+	divx {
+		float:left;
+	}
+
+	/* Klassen-Selektoren */
+
+	.floating {
+		float:left;
+		width: 300px;
+		height: 300px;
+		margin: 1em;
+		background-color: darkblue;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+
+	.flexbox {
+		display: flex;
+		background-color: grey;
+		justify-content: center;
+	}
+
+	.flexbox_item {
+		width: 300px;
+		height: 300px;
+		margin: 1em;
+		background-color: darkred;
+	}
+
+	.grid-container {
+		display: grid;
+		background-color: black;
+		grid-template-columns: auto auto auto;
+		grid-gap: 1em;
+	}
+
+	.grid_item {
+		height: 300px;
+		background-color: darkgreen;
+		/*border: 10px solid white;*/
+	}
+
+	table, tr, th, td {
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+
+	th {
+		background-color: pink;
+	}
+
+	tr:nth-child(even)
+	{
+		background-color: lightblue;
+	}
+	
+	</style>
+</head>
+<body>
+	
+	<h1>Floating</h1>
+
+	<div class="floating"></div>
+	<div class="floating"></div>
+	<div class="floating"></div>
+
+	<div class="clearfix"></div>
+
+	<div>Probetext</div>
+
+	<h1>Flex-Box</h1>
+
+	<div class="flexbox">
+		<div class="flexbox_item"></div>
+		<div class="flexbox_item"></div>
+		<div class="flexbox_item"></div>
+	</div>
+
+	<h1>Grid-Modell</h1>
+
+	<div class="grid-container">
+		<div class="grid_item"></div>
+		<div class="grid_item"></div>
+		<div class="grid_item"></div>
+	</div>
+
+	<h1>Formularfelder</h1>
+
+	<ul>
+		<li>Textfeld - type="text"</li>
+		<li>Emailfeld - type="email"</li>
+		<li>Passwort - type="password"</li>
+		<li>Textarea - textarea</li>
+		<li>Alternativauswahl - Radiobutton</li>
+		<li>Mehrfachauswahl - Checkbox</li>
+	</ul>
+
+	<form method="POST"> <!-- POST oder GET -->
+
+		<input type="text" name="ftext"><br>
+		<input type="color" name="fcolor"><br>
+		<input type="date" name="fdate"><br>
+		<input type="reset" name="fdate"><br>
+		<input type="file" name="fdate"><br>
+		<hr>
+		<input type="radio" name="falter1" value="A1"> Alter1<br>
+		<input type="radio" name="falter1" value="A2"> Alter2<br>
+		<input type="radio" name="falter1" value="A3"> Alter3<br>
+		<hr>
+		<input type="checkbox" name="fcheck1" value="V1"> Wert1<br>
+		<input type="checkbox" name="fcheck2" value="V2"> Wert2<br>
+		<input type="checkbox" name="fcheck3" value="V3"> Wert3<br>
+		<hr>
+		<input type="submit" name="button" value="Jetzt abschicken!">
+		<input type="button" name="button" value="Jetzt abschicken!">
+		<button>Jetzt abschicken</button>
+
+	</form>
+	<div style="margin-bottom:5em"></div>
+
+	<hr>
+
+	<h1>Tabellen</h1>
+
+	<!-- Erstellen Sie eine Tabelle mit dünnen Randlinie, die eine Adressliste
+	 	 enthält mit den Spaltenüberschriften Name, Vorname, Strasse, Ort
+	 	 mit wechselnden Hintergrundfarben für die jeweils 2. Zeile.
+	 -->
+
+	 <table>
+	 	<thead>
+	 		<tr>
+	 			<th>Name</th><th>Vorname</th><th>Strasse</th><th>Ort</th>
+	 		</tr>
+	 	</thead>
+	 	<tbody>
+	 		<tr>
+	 			<td>Mustermann</td><td>Alfred</td><td>Teststr. 1</td><td>München</td>
+	 		</tr>
+	 		<tr>
+	 			<td>Schneider</td><td>Alfred</td><td>Teststr. 1</td><td>München</td>
+	 		</tr>
+	 		<tr>
+	 			<td>Klausen</td><td>Alfred</td><td>Teststr. 1</td><td>München</td>
+	 		</tr>
+	 		<tr>
+	 			<td>Lange</td><td>Alfred</td><td>Teststr. 1</td><td>München</td>
+	 		</tr>
+	 </table>
+</body>
+</html>

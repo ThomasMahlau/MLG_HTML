@@ -1,0 +1,13 @@
+body {
+	width: 60%;
+	margin: auto;
+}
+aside {
+	width: 30%;
+	padding: 15px;
+	margin-left: 15px;
+	float: right;
+	background-color: lightgrey;
+}
+
+
