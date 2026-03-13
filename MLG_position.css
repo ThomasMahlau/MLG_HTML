@@ -1,0 +1,30 @@
+nav {
+	background-color: dodgerblue;
+	position: sticky;
+	top: 0;
+}
+
+.absolute {
+	background-color: green;
+	/*height:200px;
+	width: 200px;*/
+	position: absolute;
+	right: 20px;
+	top: 150px;
+}
+
+.bleib {
+	background-color: red;
+	/*height:200px;
+	width: 200px;*/
+	position: fixed;
+	right: 20px;
+	top: 250px;
+}
+
+footer {
+	background-color: blue;
+	height: 30px;
+	position: sticky;
+	bottom: 0;
+}

@@ -1,0 +1,101 @@
+body {
+	counter-reset: cntH1;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	font-family: Helvetica;
+	background-image: url("../src/images/adventures/boote.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 40em;
+	background-attachment: fixed;
+}
+
+.hintergrundfarbe {
+	background-color: white;
+	border: 0;
+	margin: 0;
+}
+h1 {
+	counter-reset: cntH2;
+	clear: both;
+}
+
+h2 {
+	counter-reset: cntH3;
+	clear: both;
+}
+
+h3 {
+	clear: both;
+}
+
+h1::before {
+  counter-increment:cntH1;
+  content: "§ " counter(cntH1);
+  margin-right: 0.5em;
+}
+
+h2::before {
+  counter-increment:cntH2;
+  content:counter(cntH1) "." counter(cntH2);
+  margin-right: 0.5em;
+}
+
+h3::before {
+  counter-increment:cntH3;
+  content:counter(cntH1) "." counter(cntH2) "." counter(cntH3);
+  margin-right: 0.5em;
+}
+
+.spalten-container-zwei {
+    -webkit-columns: 2; /* Für Chrome, Safari, Edge */
+    -moz-columns: 2;    /* Für Firefox */
+    columns: 2;         /* Anzahl der Spalten: 2 */
+    column-gap: 3em;  /* Abstand zwischen den Spalten */
+}
+
+
+div {
+	margin: 1em;
+}
+
+img {
+	width: 100px;
+	float: left;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.img_right {
+	width: 100px;
+	float: right;
+	margin-left: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.back {
+	background-color: dodgerblue;
+	color: white;
+	position: fixed;
+	top: 50%;
+	right: 5px;
+	border-radius: 8px;
+	padding: 0.3em;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.firstcolumn {
+	background-color: lightgrey;
+	width:50%;
+}
+
+.guckloch {
+	height: 30em;
+	background-color: transparent;
+}
